@@ -21,7 +21,8 @@
 		"body-parser": "latest",
 		"swaggerize-express": "latest",
 		"swaggerize-ui": "latest",
-		"jsonpath": "latest"
+		"jsonpath": "latest",
+		"tedious": "latest"
 	},
 	"devDependencies": {
 		"tape": "latest",

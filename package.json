@@ -1,0 +1,41 @@
+{
+	"name": "csgazureapi",
+	"description": "",
+	"version": "0.1.0",
+	"author": "Michael Baltic <geekstrap@live.com>",
+	"contributors": [],
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/nerdstrap/csgazureapi.git"
+	},
+	"bugs": "http://github.com/nerdstrap/csgazureapi/issues",
+	"publishConfig": {
+		"registry": "https://registry.npmjs.org"
+	},
+	"engines": {
+		"node": "5.5.0",
+		"npm": "3.5.3"
+	},
+	"dependencies": {
+		"express": "latest",
+		"body-parser": "latest",
+		"swaggerize-express": "latest",
+		"swaggerize-ui": "latest",
+		"jsonpath": "latest"
+	},
+	"devDependencies": {
+		"tape": "latest",
+		"js-yaml": "latest",
+		"jshint": "latest",
+		"istanbul": "latest",
+		"enjoi": "latest",
+		"supertest": "latest"
+	},
+	"scripts": {
+		"test": "tape tests/*.js",
+		"cover": "istanbul cover tape -- test/*.js",
+		"lint": "jshint -c .jshintrc --exclude ./node_modules .",
+		"regenerate": "yo swaggerize --only=handlers,models,tests --framework express --apiPath config/api.json"
+	},
+	"main": "./server"
+}

@@ -30,8 +30,7 @@
 		"jshint": "latest",
 		"istanbul": "latest",
 		"enjoi": "latest",
-		"supertest": "latest",
-		"azure": "latest"
+		"supertest": "latest"
 	},
 	"scripts": {
 		"test": "tape tests/*.js",

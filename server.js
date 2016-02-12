@@ -26,5 +26,7 @@ app.use('/docs', swaggerUi({
 }));
 
 server.listen(port, function () {
-	console.log('Ready');
+	var port = server.address().port;
+
+	console.log('csgazureapi is listening on port %s', port);
 });
